@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Services – VIDYUT SOLAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== COMMON FROM INDEX ===== */
+body{margin:0;font-family:Arial;background:#f4f6f8;color:#222}
+
+header{
+  background:#fff;
+  padding:6px 25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+  z-index:999;
+}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-area img{height:65px}
+nav a{color:#0a3d62;margin-left:15px;text-decoration:none;font-weight:bold}
+
+.section{
+  background:#fff;
+  margin:30px auto;
+  padding:40px;
+  max-width:1150px;
+  border-radius:14px;
+}
+
+h1,h2{color:#0a3d62}
+
+/* ===== SERVICES DESIGN ===== */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.service-card{
+  background:linear-gradient(135deg,#f7fbff,#eef5ff);
+  padding:30px 25px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.service-card:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:0 16px 35px rgba(0,0,0,0.25);
+}
+
+.service-icon{
+  font-size:55px;
+  margin-bottom:15px;
+  animation:floatIcon 3s ease-in-out infinite;
+}
+
+.service-card h3{
+  color:#0a3d62;
+  margin-bottom:10px;
+}
+
+.service-card p{
+  font-size:14.5px;
+  color:#444;
+  line-height:1.7;
+}
+
+@keyframes floatIcon{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+  100%{transform:translateY(0)}
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0a3d62;
+  color:#fff;
+  padding:35px;
+  text-align:center;
+  margin-top:50px;
+}
+
+.footer-box{max-width:600px;margin:auto}
+
+.social-icons a{
+  font-size:22px;
+  margin:0 8px;
+  text-decoration:none;
+  display:inline-block;
+  transition:.3s;
+}
+.social-icons a:hover{transform:scale(1.3)}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:55px;
+  height:55px;
+  background:#25d366;
+  color:white;
+  border-radius:50%;
+  font-size:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER (EXACT LIKE INDEX) ===== -->
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="VIDYUT SOLAR Logo">
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="schemes.html">Gov. Schemes</a>
+    <a href="finance.html">Finance</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ===== SERVICES INTRO ===== -->
+<div class="section">
+  <h1>Our Solar Services</h1>
+  <p>
+    At <b>VIDYUT SOLAR</b>, we deliver complete end-to-end solar solutions with high engineering standards,
+    certified components, and long-term performance assurance. With 7+ years of industry experience and
+    500+ successful installations across India, we serve residential, commercial, industrial and housing
+    society clients with reliable solar infrastructure.
+  </p>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">🏠</div>
+      <h3>Residential Rooftop Solar</h3>
+      <p>
+        Customized rooftop solar systems for homes with high efficiency panels, branded inverters,
+        subsidy support and complete installation services to reduce electricity bills up to 90%.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏭</div>
+      <h3>Commercial & Industrial Solar</h3>
+      <p>
+        Large-scale solar power plants for factories, warehouses and commercial buildings to reduce
+        operating costs and improve long-term profitability.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <h3>Housing Society Solar</h3>
+      <p>
+        Solar systems for common area loads, lifts, water pumps and EV charging with society funding
+        models and group approvals.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h3>System Design & Engineering</h3>
+      <p>
+        Professional site survey, shadow analysis, structure design and load calculations to ensure
+        maximum generation and long system life.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📑</div>
+      <h3>Subsidy & Net Metering Support</h3>
+      <p>
+        Complete assistance for government subsidy processing, DISCOM approvals, net metering
+        applications and documentation.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Solar Maintenance & AMC</h3>
+      <p>
+        Preventive maintenance, performance monitoring, fault diagnosis, cleaning schedules and
+        long-term AMC services after warranty.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💳</div>
+      <h3>Easy EMI & Solar Financing</h3>
+      <p>
+        Flexible financing options with nationalized banks, NBFC partners and society funding models
+        including zero-investment PPA structures.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🛡️</div>
+      <h3>5 Years Free Service Support</h3>
+      <p>
+        Free system health checks, inverter monitoring, safety inspections and technical support for
+        the first 5 years to ensure worry-free operation.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOOTER (EXACT LIKE INDEX) ===== -->
+<footer>
+<div class="footer-box">
+<p>📞7350955393 / 9850818120 | 📧info@vidyutsolar.in</p>
+<p>📍Locations: Pune, Nashik, Mumbai, Satara, Sambhajinagar, Ahilyanagar, Kolhapur</p>
+<p>Service Coverage: All Over India</p>
+------------------------------------------------
+<p>GST NO:27G0YPS2253K1ZY</p>
+<p>© 2024 Vidyut Solar. All Rights Reserved.</p>
+</div>
+</footer>
+
+
+<script>
+function toggleMenu(){
+  document.querySelector("nav").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

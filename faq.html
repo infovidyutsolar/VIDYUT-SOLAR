@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FAQ – VIDYUT Solar Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Frequently Asked Questions about rooftop solar, subsidy, EMI, installation, maintenance and government schemes by VIDYUT Solar Solutions.">
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8;color:#222}
+
+/* ===== HEADER (same as index) ===== */
+header{
+  background:#fff;
+  padding:6px 25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+  z-index:999;
+}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-area img{height:65px}
+nav a{color:#0a3d62;margin-left:15px;text-decoration:none;font-weight:bold}
+
+/* ===== SECTION ===== */
+.section{
+  background:#fff;
+  margin:30px auto;
+  padding:35px;
+  max-width:1150px;
+  border-radius:14px;
+}
+h1,h2{color:#0a3d62}
+
+/* ===== FAQ UI ===== */
+.faq-container{
+  max-width:1000px;
+  margin:auto;
+}
+
+.faq-item{
+  border-radius:12px;
+  margin-bottom:14px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  background:#f9fbff;
+  transition:.3s;
+}
+
+.faq-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.faq-question{
+  padding:18px 22px;
+  cursor:pointer;
+  font-weight:bold;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:linear-gradient(135deg,#eaf3ff,#ffffff);
+}
+
+.faq-question span{
+  font-size:20px;
+  color:#0a3d62;
+}
+
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .4s ease,padding .4s ease;
+  padding:0 22px;
+  background:#fff;
+}
+
+.faq-answer p{
+  margin:12px 0;
+  line-height:1.7;
+  color:#444;
+}
+
+.faq-item.active .faq-answer{
+  max-height:300px;
+  padding:18px 22px;
+}
+
+.faq-item.active .faq-question span{
+  transform:rotate(45deg);
+}
+
+/* ===== FOOTER (same as index) ===== */
+footer{
+  background:#0a3d62;
+  color:#fff;
+  padding:35px;
+  text-align:center;
+  margin-top:50px
+}
+.footer-box{max-width:600px;margin:auto}
+
+/* ===== WhatsApp ===== */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:55px;
+  height:55px;
+  background:#25d366;
+  color:white;
+  border-radius:50%;
+  font-size:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="VIDYUT SOLAR Logo">
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="schemes.html">Gov. Schemes</a>
+    <a href="finance.html">Finance</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="section">
+<h1>Frequently Asked Questions (FAQ)</h1>
+<p>Find answers to common questions about rooftop solar systems, subsidy, EMI, installation, maintenance and government schemes.</p>
+
+<div class="faq-container">
+
+<script>
+const faqData = [
+["17. Solar panels किती वर्ष टिकतात?","Solar panels साधारण 25–30 वर्ष efficient काम करतात."],
+["18. Inverter ची life किती असते?","On-grid inverter: 8–12 वर्ष<br>Hybrid inverter: 10–15 वर्ष"],
+["19. पावसाळ्यात solar काम करतो का?","हो, sunlight कमी असला तरी system electricity generate करतो."],
+["20. ढगाळ हवामानात output कमी होतो का?","हो, पण system बंद होत नाही."],
+["21. Solar panel ला सावली पडली तर काय होते?","Output कमी होतो, म्हणून shadow-free installation महत्वाची असते."],
+["22. Panel साफ करणे गरजेचे आहे का?","हो, 15–30 दिवसात एकदा cleaning recommended आहे."],
+["23. Installation किती दिवसात complete होते?","साधारण 3 ते 7 working days."],
+["24. Site survey का गरजेचा असतो?","योग्य capacity design आणि safety साठी."],
+["25. Old building वर solar बसवता येते का?","हो, structure strong असेल तर शक्य आहे."],
+["26. Terrace waterproofing वर solar बसवता येतो का?","हो, special mounting structure वापरतो."],
+["27. Society approval लागते का?","हो, housing society permission आवश्यक असते."],
+["28. Government approval कोण घेतो?","VIDYUT Solar complete documentation handle करते."],
+["29. Subsidy मिळायला किती वेळ लागतो?","साधारण 30–90 days."],
+["30. Subsidy direct bank account मध्ये येते का?","हो, DBT (Direct Benefit Transfer) ने."],
+["31. PM Surya Ghar Yojana सर्वांसाठी आहे का?","Residential customers साठी."],
+["32. Housing society साठी subsidy आहे का?","हो, special group housing subsidy schemes आहेत."],
+["33. KUSUM scheme कुणासाठी आहे?","Farmers & agriculture pumps साठी."],
+["34. EMI option available आहे का?","हो, multiple banks & NBFC tie-ups आहेत."],
+["35. Minimum down payment किती लागतो?","0% ते 20% depending on finance partner."],
+["36. Interest rate किती असतो?","8% – 13% yearly approx."],
+["37. EMI tenure किती असते?","3 ते 7 years."],
+["38. EMI electricity saving पेक्षा जास्त असते का?","नाही, बहुतांश वेळा EMI < electricity bill saving."],
+["39. System सुरक्षित आहे का?","हो, earthing + lightning protection दिले जाते."],
+["40. Fire risk असतो का?","Proper installation केल्यास नाही."],
+["41. Panel warranty किती?","25 years performance warranty."],
+["42. Inverter warranty किती?","5–10 years brand dependent."],
+["43. Mounting structure warranty?","10 years."],
+["44. AMC म्हणजे काय?","Annual Maintenance Contract."],
+["45. AMC compulsory आहे का?","नाही, optional आहे."],
+["46. Breakdown झाल्यास काय?","24×7 support team उपलब्ध आहे."],
+["47. Remote monitoring मिळते का?","हो, mobile app द्वारे."],
+["48. System shift करता येतो का?","हो, relocation possible आहे."],
+["49. Factory साठी solar फायदेशीर आहे का?","हो, electricity cost 60–90% कमी होते."],
+["50. Society project ROI किती?","3–4 years."],
+["51. Net-metering म्हणजे काय?","Extra electricity grid ला देणे."],
+["52. Commercial meter वर subsidy मिळते का?","नाही, subsidy residential साठी आहे."],
+["53. VIDYUT Solar किती वर्षांपासून काम करत आहे?","7+ years."],
+["54. किती installations झाले आहेत?","500+ all over India."],
+["55. कोणकोणत्या cities मध्ये service आहे?","Pune, Mumbai, Nashik, PCMC, Satara, Sambhajinagar, Kolhapur + All India."],
+["56. Contact कसा करायचा?","Website, phone, WhatsApp किंवा office visit."]
+];
+
+document.write(
+  faqData.map((q,i)=>{
+    const cleanQ = q[0].replace(/^\d+\.\s*/,'');
+    return `
+    <div class="faq-item">
+      <div class="faq-question">${i+1}. ${cleanQ} <span>+</span></div>
+      <div class="faq-answer"><p>${q[1]}</p></div>
+    </div>`;
+  }).join("")
+);
+</script>
+
+</div>
+</div>
+
+<footer>
+<div class="footer-box">
+<p>📞7350955393 / 9850818120 | 📧info@vidyutsolar.in</p>
+<p>📍Locations: Pune, Nashik, Mumbai, Satara, Sambhajinagar, Ahilyanagar, Kolhapur</p>
+<p>Service Coverage: All Over India</p>
+------------------------------------------------
+<p>GST NO:27G0YPS2253K1ZY</p>
+<p>© 2024 Vidyut Solar. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+document.querySelectorAll(".faq-question").forEach(q=>{
+  q.addEventListener("click",()=>{
+    q.parentElement.classList.toggle("active");
+  });
+});
+</script>
+<script>
+function toggleMenu(){
+  document.querySelector("nav").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

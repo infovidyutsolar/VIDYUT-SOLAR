@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Solar Finance Options – VIDYUT SOLAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8;color:#222}
+
+/* ===== HEADER (same as index) ===== */
+header{
+  background:#fff;
+  padding:6px 25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+  z-index:999;
+}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-area img{height:65px}
+nav a{color:#0a3d62;margin-left:15px;text-decoration:none;font-weight:bold}
+
+/* ===== SECTION ===== */
+.section{
+  background:#fff;
+  margin:30px auto;
+  padding:35px;
+  max-width:1150px;
+  border-radius:14px;
+}
+h2{color:#0a3d62;margin-top:0}
+
+/* ===== CARDS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:25px;
+}
+
+.card{
+  background:#f7fbff;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 12px 28px rgba(0,0,0,0.25);
+}
+
+.card .icon{font-size:40px;margin-bottom:10px}
+.card h3{color:#0a3d62;margin-top:5px}
+
+/* ===== PROCESS STEPS ===== */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+.step{
+  background:#0a3d62;
+  color:#fff;
+  padding:20px;
+  border-radius:14px;
+  text-align:center;
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+
+/* ===== EMI TABLE ===== */
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{border:1px solid #ddd;padding:10px;text-align:center}
+th{background:#0a3d62;color:#fff}
+
+/* ===== EMI CALCULATOR ===== */
+.calculator{
+  max-width:500px;
+  margin:auto;
+  background:#f0f6fb;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+.calculator input{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+.calculator button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  background:#0a3d62;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+.result{margin-top:15px;font-weight:bold;color:#0a3d62}
+
+/* ===== FOOTER (same as index) ===== */
+footer{
+  background:#0a3d62;
+  color:#fff;
+  padding:35px;
+  text-align:center;
+  margin-top:50px;
+}
+.footer-box{max-width:600px;margin:auto}
+
+/* ===== WHATSAPP ===== */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:55px;
+  height:55px;
+  background:#25d366;
+  color:white;
+  border-radius:50%;
+  font-size:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+</style></head>
+<body>
+  <header>
+  <div class="logo-area">
+    <img src="logo.png" alt="VIDYUT SOLAR Logo">
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="schemes.html">Gov. Schemes</a>
+    <a href="finance.html">Finance</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header><!-- INTRO --><div class="section">
+  <h2>Solar Financing Solutions by VIDYUT SOLAR</h2>
+  <p>
+    VIDYUT SOLAR provides flexible and affordable solar financing options for residential customers, commercial & industrial businesses, and housing societies across India. With easy EMI plans, zero upfront investment models, and strong partnerships with leading banks and NBFCs, we make your transition to solar simple and stress-free.
+  </p>
+</div><!-- FINANCE OPTIONS --><div class="section">
+<h2>Our Financing Options</h2>
+<div class="grid"><div class="card">
+<div class="icon">🏠</div>
+<h3>Residential Solar Finance</h3>
+<ul>
+<li>0% to low down payment options</li>
+<li>EMI tenure up to 3–5 years</li>
+<li>Quick loan approval</li>
+<li>Government subsidy support</li>
+</ul>
+</div><div class="card">
+<div class="icon">🏢</div>
+<h3>Commercial & Industrial Finance</h3>
+<ul>
+<li>Term loans available</li>
+<li>CAPEX & OPEX models</li>
+<li>Tax depreciation benefits</li>
+<li>Customized funding solutions</li>
+</ul>
+</div><div class="card">
+<div class="icon">🏘️</div>
+<h3>Housing Society Funding</h3>
+<ul>
+<li>Society PPA model</li>
+<li>No upfront investment</li>
+<li>Pay-per-unit electricity model</li>
+<li>Long-term savings for society</li>
+</ul>
+</div></div>
+</div><!-- FINANCE PARTNERS --><div class="section">
+<h2>Our Finance Partners</h2>
+<div class="grid">
+<div class="card">SBI</div>
+<div class="card">Bank of Baroda</div>
+<div class="card">HDFC Bank</div>
+<div class="card">Bajaj Finance</div>
+<div class="card">Tata Capital</div>
+</div>
+</div><!-- EMI TABLE --><div class="section">
+<h2>Sample EMI Plans</h2>
+<table>
+<tr><th>System Size</th><th>Approx Cost</th><th>EMI (36 Months)</th></tr>
+<tr><td>3 kW</td><td>₹1,80,000</td><td>₹5,500</td></tr>
+<tr><td>5 kW</td><td>₹3,00,000</td><td>₹9,000</td></tr>
+<tr><td>10 kW</td><td>₹5,80,000</td><td>₹17,500</td></tr>
+</table>
+</div><!-- EMI CALCULATOR --><div class="section">
+<h2>EMI Calculator</h2>
+<div class="calculator">
+<input type="number" id="amount" placeholder="System Cost (₹)">
+<input type="number" id="rate" placeholder="Interest Rate (% per year)">
+<input type="number" id="months" placeholder="Tenure (months)">
+<button onclick="calcEMI()">Calculate EMI</button>
+<div class="result" id="emiResult"></div>
+</div>
+</div><!-- PROCESS --><div class="section">
+<h2>Solar Finance Process</h2>
+<div class="steps">
+<div class="step">1️⃣ Site Survey</div>
+<div class="step">2️⃣ Quotation</div>
+<div class="step">3️⃣ Loan Approval</div>
+<div class="step">4️⃣ Installation</div>
+<div class="step">5️⃣ EMI Start</div>
+</div>
+</div><!-- WHY VIDYUT --><div class="section">
+<h2>Why Finance with VIDYUT SOLAR?</h2>
+<ul>
+<li>7+ years of industry experience</li>
+<li>500+ successful installations</li>
+<li>Complete documentation & subsidy assistance</li>
+<li>Strong coordination with banks</li>
+<li>One-stop solar solution provider</li>
+</ul>
+</div><!-- CTA --><div class="section" style="text-align:center">
+<h2>Apply for Solar Finance Today</h2>
+<a href="https://wa.me/918956401373" style="display:inline-block;padding:15px 40px;background:#25d366;color:#fff;border-radius:30px;font-size:18px;text-decoration:none">Apply on WhatsApp</a>
+</div><footer>
+<div class="footer-box">
+<p>📞7350955393 / 9850818120 | 📧info@vidyutsolar.in</p>
+<p>📍Locations: Pune, Nashik, Mumbai, Satara, Sambhajinagar, Ahilyanagar, Kolhapur</p>
+<p>Service Coverage: All Over India</p>
+------------------------------------------------
+<p>GST NO:27G0YPS2253K1ZY</p>
+<p>© 2024 Vidyut Solar. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script>
+function calcEMI(){
+  const P = parseFloat(document.getElementById('amount').value);
+  const R = parseFloat(document.getElementById('rate').value)/12/100;
+  const N = parseFloat(document.getElementById('months').value);
+
+  if(!P || !R || !N){
+    document.getElementById('emiResult').innerHTML = "Please enter all values";
+    return;
+  }
+
+  const emi = (P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1);
+  document.getElementById('emiResult').innerHTML = "Estimated EMI: ₹" + emi.toFixed(0) + " / month";
+}
+</script>
+<script>
+function toggleMenu(){
+  document.querySelector("nav").classList.toggle("active");
+}
+</script>
+</body>
+</html>
